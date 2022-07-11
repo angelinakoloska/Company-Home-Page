@@ -1,0 +1,234 @@
+/* Importing fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
+
+html {
+    font-size: 16px;
+    font-family: 'Poppins', sans-serif;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #f2f2f2;
+}
+
+h1, h2, p {
+    text-align: center;
+}
+
+h2 {
+    font-size: 1.75rem;
+}
+
+p {
+    font-size: 1.25rem;
+}
+
+header {
+    background-image: url('https://img.freepik.com/free-photo/skyscrapers-from-low-angle-view_1359-568.jpg?w=2000');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 110px;
+}
+
+header h1 {
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-style: italic;
+    color: rgb(255, 255, 255);
+    padding: 10px 0;
+
+}
+
+header nav {
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul {
+    margin: 10px auto;
+    flex-direction: row;
+    display: flex;
+    gap: 1.5rem;
+}
+
+header nav li {
+    list-style: none;
+}
+
+header nav a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+header nav a:hover {
+    text-decoration: underline;
+}
+
+.main {
+    padding-top: 35px;
+}
+
+.mission {
+    display: flex;
+}
+
+.mission .content {
+    margin: auto;
+}
+
+.main p {
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.banner-portfolio {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcommunity.arm.com%2Fcfs-file%2F__key%2Fcommunityserver-blogs-components-weblogfiles%2F00-00-00-37-86%2Farm_2D00_embedded_2D00_blog.jpg&f=1&nofb=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 180px;
+    margin-top: 35px;
+}
+
+#portfolio {
+    margin-top: 35px;
+    width: 100%;
+}
+
+.projects {
+    margin-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.project {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.project h4 {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.project img {
+    width: 200px;
+}
+
+#team .content {
+    margin-top: 35px;
+}
+
+/*.team {
+    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freeimages.com%2Fimages%2Flarge-previews%2F25f%2Fthe-wall-1211398.jpg&f=1&nofb=1');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 500px;
+    width: 100%;
+}*/
+
+/*.team {
+    padding-top: 35px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-between;
+    gap: 2rem;
+    max-width: 500px;
+}*/
+
+.team__item img {
+    width: 300px;
+    margin: 35px 10px;
+}
+
+.team {
+    padding: 35px 0;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages.freeimages.com%2Fimages%2Flarge-previews%2F25f%2Fthe-wall-1211398.jpg&f=1&nofb=1');
+    background-size: cover;
+    height: auto; /* 500px - 33rem */
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+}
+
+
+.team__item h3 {
+    font-size: 2rem;
+}
+
+.team__item h4 {
+    font-size: 1.25rem;
+    padding-top: 10px;
+}
+
+.team__item {
+    text-align: center;
+    color: #fff;
+    
+}
+
+footer {
+    margin-top: 35px;
+}
+
+.footer__item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.footer__item p {
+    padding: 8px 0;
+}
+
+.mail {
+    font-size: 1.25rem;
+}
+
+.telnumber {
+    font-size: 1.15rem;
+    text-align: center;
+}
+
+.copyright {
+    font-size: 1.35rem;
+    font-weight: bold;
+}
+
+
+
+
+
+
+
+/*.team__item h3 h4 {
+    text-align: center;
+    color: #fff;
+}*/
+
+/*.hero__item {
+    text-align: center;
+    color: #fff;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    line-height: 2.25rem;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+}*/
