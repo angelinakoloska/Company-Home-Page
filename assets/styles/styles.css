@@ -172,10 +172,6 @@ footer h3 {
         display: flex;
         flex-direction: row;
     }
-    
-    #team .team-members .team-item {
-        position: relative;
-     }
 
 
 
