@@ -2,211 +2,182 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap');
 
 html {
-    font-size: 100%;
     font-family: 'Poppins', sans-serif;
-}
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+    font-size: 100%;
 }
 
 body {
-    background-color: #f2f2f2;
+    margin: 0;
+    background-color: #eee;
+    height: auto;
 }
 
-h1, h2, p {
-    text-align: center;
+h1 {
+    font-style: italic;
+    font-size: 2rem;
+    text-transform: capitalize;
+    margin: 0;
 }
 
 h2 {
-    font-size: 1.75rem;
+    font-weight: 600;
+    font-size: 1.35rem;
+    text-transform: uppercase;
+    margin: 0;
 }
 
 p {
-    font-size: 1.25rem;
+    margin: 0;
 }
 
-/* ================= header/navbar ================= */
-header {
-    background-image: url('https://www.wallpaperuse.com/wallp/48-489917_m.jpg');
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    
+img {
+    display: block;
+    width: 100%;
 }
 
-header h1 {
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    font-style: italic;
-    color: rgb(255, 255, 255);
-    padding: 10px 0;
+nav {
+    background-color: #fff;
+    text-align: center;
 }
 
-header nav {
-    display: flex;
-    justify-content: center;
+nav ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
 }
 
-header nav ul {
-    margin: 10px auto;
-    flex-direction: row;
-    display: flex;
-    gap: 1.5rem;
+nav ul li {
+    display: inline;
 }
 
-header nav li {
-    list-style: none;
-}
-
-header nav a {
-    color: #fff;
+nav a {
+    padding: 0.8rem;
+    color: #000;
     text-decoration: none;
-    font-size: 1.25rem;
+    font-size: 1.15rem;
+    transition: all 0.5s ease;
 }
 
-header nav a:hover {
-    text-decoration: underline;
+nav a:hover {
+    color: rgba(0, 0, 0, 0.5);
 }
 
-.main {
-    padding-top: 35px;
-}
-
-.main p {
-    font-size: 1.25rem;
-    padding-top: 10px;
-}
-
-/* ================= Mission statement section ================= */
-
-.mission {
-    display: flex;
-}
-
-.mission .content {
+main {
+    max-width: 900px;
     margin: auto;
 }
 
+#mission-text {
+    display: flex;
+    flex: 0 1 40vw;
+    justify-content: center;
+    align-items: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    text-align: center;
+    height: 50vh;
+}
 
-/* ================= Portfolio section ================= */
+#mission h3 {
+    font-size: 1rem;
+}
 
-.banner-portfolio {
-    background-image: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcommunity.arm.com%2Fcfs-file%2F__key%2Fcommunityserver-blogs-components-weblogfiles%2F00-00-00-37-86%2Farm_2D00_embedded_2D00_blog.jpg&f=1&nofb=1');
+#mission-image {
+    background-image: url('https://images.unsplash.com/photo-1504639725590-34d0984388bd?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1374&q=80');
     background-position: center;
-    background-repeat: no-repeat;
     background-size: cover;
-    height: 180px;
-    margin-top: 35px;
+    background-repeat: no-repeat;
+    height: 50vh;
+    flex: 0 1 60vw;
+    margin: 0;
 }
 
 #portfolio {
-    margin-top: 35px;
-    width: 100%;
+    margin-top: 2.25rem;
 }
 
-#portfolio .content .projects {
-    margin-top: 35px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#portfolio .content .projects .project {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-#portfolio .content .projects .project h4 {
+#portfolio-text {
     text-align: center;
-    padding-top: 30px;
 }
 
-#portfolio .content .projects .project img {
-    width: 200px;
-}
-
-/* ================= Team section ================= */
-
-#team {
-    margin-top: 35px;
-}
-
-#team .content {
-    width: 100%;
-    height: auto;    
-}
-
-#team h2 {
-    margin-bottom: 20px;
-}
-
-
-.team__item img {
-    width: 300px;
-    margin: 35px 10px;
-}
-
-.team {
-    padding: 35px 0;
-    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('https://t4.ftcdn.net/jpg/01/71/46/41/240_F_171464166_xWbzideiM8TRMqM2wO5wzKt3gfKCY8XM.jpg');
-    background-size: cover;
-    height: auto; /* 500px - 33rem */
-    width: 100%;
+#portfolio #projects {
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+    flex-direction: column;
+    color: #000;
     gap: 2rem;
 }
 
-
-.team__item h3 {
-    font-size: 2rem;
+#team {
+    margin-top: 2.25rem;
 }
 
-.team__item h4 {
-    font-size: 1.25rem;
-    padding-top: 10px;
-}
-
-.team__item {
+#team #team-text {
     text-align: center;
-    color: #fff;
+    padding: 0.8rem 0;
+}
+
+#team .team-members {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    flex-direction: column;
+    gap: 2rem;
     
 }
 
-/* ================= Footer =================*/
-
 footer {
-    margin-top: 35px;
-}
-
-.footer__item {
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-.footer__item p {
-    padding: 8px 0;
-}
-
-.mail {
-    font-size: 1.25rem;
-}
-
-.telnumber {
-    font-size: 1.15rem;
+    background-color: #fff;
     text-align: center;
+    padding: 1rem 0.5rem;
 }
 
-.copyright {
-    font-size: 1.35rem;
-    font-weight: bold;
+footer h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
 }
 
-/* ================= Media queries ================= */
+@media only screen and (min-width: 500px) {
+    #mission {
+        margin-top: 2.25rem;
+        display: flex;
+        height: 100%;
+    }
+
+    #mission-text {
+        height: 100vh;
+    }
+
+    #mission-image {
+        height: 100vh;
+    }
+    #portfolio #projects{
+         display: flex;
+         flex-direction: row;
+     }
+
+     #team {
+        margin-top: 2.25rem;
+     }
+
+     #team .team-members {
+        
+        display: flex;
+        flex-direction: row;
+    }
+    
+    #team .team-members .team-item {
+        position: relative;
+     }
+
+
+
+}
+
