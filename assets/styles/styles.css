@@ -144,6 +144,11 @@ footer h3 {
     margin-bottom: 1rem;
 }
 
+footer #creator {
+    padding-top: 0.75rem;
+    font-size: 0.85rem;
+}
+
 @media only screen and (min-width: 500px) {
     #mission {
         margin-top: 2.25rem;
@@ -168,12 +173,9 @@ footer h3 {
      }
 
      #team .team-members {
-        
         display: flex;
         flex-direction: row;
     }
-
-
 
 }
 
